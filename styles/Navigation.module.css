@@ -1,0 +1,17 @@
+.container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  padding: 0.5rem;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.link:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}

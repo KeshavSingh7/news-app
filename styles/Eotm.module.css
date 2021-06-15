@@ -4,3 +4,8 @@
   flex-direction: column;
   text-align: center;
 }
+
+.content img {
+  width: 25%;
+  min-width: 270px;
+}
