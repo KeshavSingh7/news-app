@@ -7,8 +7,8 @@ export const Navigation = () => {
     return (
         <div className={ styles.container }>
             <div onClick={ () => { router.push('/') } } className={ styles.link }>HOME</div>
-            <div onClick={ () => { router.push('/NewsFeed') } } className={ styles.link }>FEED</div>
-            <div onClick={ () => { router.push('/Eotm') } } className={ styles.link }>EOTM</div>
+            <div onClick={ () => { router.push('/feed/1') } } className={ styles.link }>FEED</div>
+            <div onClick={ () => { router.push('/eotm') } } className={ styles.link }>EOTM</div>
         </div>
     );
 };
