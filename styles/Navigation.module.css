@@ -1,12 +1,15 @@
 .container {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
 
 .link {
+  border-radius: 25px;
   padding: 0.5rem;
-  border: 1px solid black;
-  margin-right: 10px;
+  border: 2px solid black;
+  margin-right: 25px;
+  font-weight: bold;
 }
 
 .link:hover {

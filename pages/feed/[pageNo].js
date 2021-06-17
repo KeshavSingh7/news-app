@@ -6,10 +6,10 @@ const Feed = ({ pageNum, articles }) => {
     const router = useRouter();
 
     const managePrevClass = () => {
-        if(pageNum === 1)
-            return 'styles.inactive';
+        if(pageNum == 1)
+            return styles.inactive;
         else
-            return 'styles.active';
+            return styles.active;
     }
 
     const managePrevClick = () => {
@@ -20,10 +20,10 @@ const Feed = ({ pageNum, articles }) => {
     }
 
     const manageNextClass = () => {
-        if(pageNum === 5)
-            return 'styles.inactive';
+        if(pageNum == 5)
+            return styles.inactive;
         else
-            return 'styles.active';
+            return styles.active;
     }
 
     const manageNextClick = () => {
@@ -48,9 +48,9 @@ const Feed = ({ pageNum, articles }) => {
                     })   
                 }
                 <div className={ styles.pageNavigation }>
-                    <p className={`${managePrevClass()} + ' '  + ${styles.link}`} onClick={managePrevClick}> <span>&laquo;</span> Previous Page </p>
-                    <p> #{pageNum} </p>
-                    <p className={`${manageNextClass()} + ' '  + ${styles.link}`} onClick={manageNextClick}> Next Page <span>&raquo;</span> </p>
+                    <div className={managePrevClass()} onClick={managePrevClick}><h4> Previous Page </h4></div>
+                    <div><h4> #{pageNum} </h4></div>
+                    <div className={manageNextClass()} onClick={manageNextClick}><h4> Next Page </h4></div>
                 </div>
             </div>
         </div>
